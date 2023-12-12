@@ -1,10 +1,103 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-  padding: 6rem;
-  min-height: 100vh;
+  width: 100vw;
+  min-height: 1000px;
+  margin-top: 5rem;
+  background-image: url('/mangiaTruck2.png');
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-color: black;
+  position: relative;
+}
+.buttonContainer {
+  margin-bottom: 6rem;  
+
+}
+.mainButton {
+  background-color: black;
+  color: white;
+  font-size: 1.5rem;
+  border-color: white;
+  border-width: 0.15rem;
+  font-weight: 500;
+  padding: .8rem 1.5rem;
+  border-radius: 1.3rem;
+  cursor: pointer;
+  margin: 0 3rem;
+  transition: all 0.3s ease-in-out;
+}
+.mobileHeader {
+  display: none;
+}
+.mobileHeaderText {
+  display: none;
+}
+.mobileDescription {
+  display: none;
+}
+.headerText {
+  color: white;
+  font-size: 3.5rem;
+  font-weight: 300;
+  position: absolute;
+  top: 17%;
+  left: 15%;
+}
+.midHeader {
+  color: rgba(96, 81, 72, 1);
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: center;
+}
+.mainDescription {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 300;
+  max-width: 650px;
+  line-height: 2.5rem;
+  text-align: left;
+  margin: 3rem 10rem;
+}
+.listing {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.listItem {
+  color: white;
+  font-size: 3rem;
+  font-weight: 500;
+  text-align: left;
+  margin: 1rem 6rem;
+}
+.divider {
+  width: 3rem;
+  height: .1rem;
+  background-color: white;
+}
+.container1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.container2 {
+  background-color: black;
+  min-height: 1000px;
+  margin-top: 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('/midImage.png');
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
 }
 
 .description {
@@ -107,6 +200,10 @@
 .logo {
   position: relative;
 }
+
+/* changes on larger desktop screens */
+
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
@@ -125,10 +222,107 @@
   }
 }
 
+@media (min-width: 1900px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    min-height: 80vh;
+    margin-top: 5rem;
+    background-image: url('/mangiaTruck2.png');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: black;
+  }
+  
+}
+
+@media (max-width: 1200px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 6rem;
+    min-height: 1000px;
+    background-image: url('/mangiaTruck2.png');
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: black;
+  }
+}
+
+
+
+@media (max-width: 900px) {
+  .mainButton {
+    font-size: 1.2rem;
+    padding: .5rem 1rem;
+    margin: 0 1rem;
+  }
+  .buttonContainer {
+    margin-bottom: 5rem;
+  }
+  .container2 {
+    margin-top: 5rem;
+  }
+}
+
 /* Mobile */
 @media (max-width: 700px) {
   .content {
     padding: 4rem;
+  }
+  .headerText {
+    display: none;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    min-height: 85vh;
+    margin-top: 5rem;
+    margin-left: 0rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-image: none;
+    background-color: black;
+  }
+  .buttonContainer {
+    display: none;
+  }
+  .mobileHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 300;
+  }
+  .mobileHeaderText {
+    display: flex;
+    font-size: 3rem;
+    font-weight: 500;
+    color: white;
+    margin: 0rem 0;
+  }
+  .mobileDescription {
+    display: flex;
+    color: #605148;
+    font-size: 1.5rem;
+    font-weight: 300;
+    max-width: 650px;
+    line-height: 2.5rem;
+    text-align: center;
+    margin: 2rem 0;
   }
 
   .grid {
@@ -227,3 +421,4 @@
     transform: rotate(0deg);
   }
 }
+
