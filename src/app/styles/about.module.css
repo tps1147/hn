@@ -1,0 +1,17 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 5rem;
+    background-color: black;
+}
+.headerText {
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1rem;
+    margin-top: 4rem;
+}

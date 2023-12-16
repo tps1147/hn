@@ -1,9 +1,14 @@
 import Image from 'next/image'
 import styles from './styles/page.module.css'
 import { Raleway, Poppins } from 'next/font/google'
+import Carousel  from './components/carousel'
+import { InstagramOutlined, FacebookOutlined, YoutubeOutlined, GoogleOutlined } from '@ant-design/icons'
 
 const raleway = Raleway({ subsets: ['latin'] })
 const poppins = Poppins({ subsets: ['latin'], weight: ['200', '300', '400', '500'] })
+
+
+
 
 export default function Home() {
   return (
@@ -34,6 +39,19 @@ export default function Home() {
         <div className={styles.listing}>
             <span className={styles.listItem}>Pizzas</span> <span className={styles.divider}/> <span className={styles.listItem}>Steaks</span> <span className={styles.divider}/> <span className={styles.listItem}>Hoagies</span> 
         </div>
+        <div className={styles.socialPosts}>
+          <div className={styles.socialRow}></div>
+          <div className={styles.postBox}>
+            <Carousel />
+          </div>
+          <p className={styles.postComment}>
+            "The best food truck in the city! I love the pizza and the staff is always so friendly. I highly recommend Mangia Mobile to anyone looking for a quick bite to eat."
+          </p>
+        </div>
+        
+      </div>
+      <div className={styles.container3}>
+          
       </div>
     </main>
   )
