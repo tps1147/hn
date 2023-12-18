@@ -2,6 +2,7 @@ import Image from 'next/image'
 import styles from './styles/page.module.css'
 import { Raleway, Poppins } from 'next/font/google'
 import Carousel  from './components/carousel'
+import Calendar from './components/calendar'
 import { InstagramOutlined, FacebookOutlined, YoutubeOutlined, GoogleOutlined } from '@ant-design/icons'
 
 const raleway = Raleway({ subsets: ['latin'] })
@@ -48,10 +49,28 @@ export default function Home() {
             "The best food truck in the city! I love the pizza and the staff is always so friendly. I highly recommend Mangia Mobile to anyone looking for a quick bite to eat."
           </p>
         </div>
-        
       </div>
       <div className={styles.container3}>
-          
+        <div className={styles.boxContainer}>
+          <div className={styles.box1}>
+            <h4 className={`${styles.boxHeader} ${raleway.className}`}>Full Catering Service</h4>
+            <p className={`${styles.boxDescription} ${poppins.className}`}>
+              We offer full catering services for any event. Whether you're hosting a wedding, birthday party, or corporate event, we can provide the perfect menu for your guests. Our team will work with you to create a customized menu that fits your needs and budget. We also offer delivery and set up so you don't have to worry about anything on the day of the event!
+            </p>
+          </div>
+          <div className={styles.box2}>
+            <h4 className={`${styles.boxHeader} ${raleway.className}`}>Locations</h4>
+            <p className={`${styles.boxDescription} ${poppins.className}`}>
+              We have one main location in west chester, but we are always mobile! Check out our calendar to see where we will be next.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className={styles.calendarContainer}>
+          <h2 className={`${styles.midHeader} ${raleway.className}`}>Calendar</h2>
+          <div className={styles.calendar}>
+            <Calendar />
+          </div>
       </div>
     </main>
   )

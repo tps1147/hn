@@ -151,15 +151,56 @@
 }
 .container3 {
   background-color: black;
-  min-height: 1000px;
+  min-height: 800px;
   margin-top: 0rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   background-image: url('/wood.png');
   background-size: contain;
   background-position: top;
   background-repeat: no-repeat;
+}
+.calendarContainer {
+  background-color: black;
+  min-height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+
+.boxContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+.box1 {
+  width: 400px;
+  background-color: black;
+  border-radius: 1.5rem;
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 2rem;
+}
+.box2 {
+  width: 400px;
+  background-color: black;
+  border-radius: 1.5rem;
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 2rem;
 }
 
 .description {
