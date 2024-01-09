@@ -6,3 +6,17 @@
   width: 600px;
   height: auto;
 }
+.customCalendar .ant-picker-calendar-date,
+.customCalendar .ant-picker-calendar-date .ant-picker-calendar-date-value {
+  background-color: black !important;
+  color: white !important; /* Change the text color to white for visibility */
+}
+
+.event {
+  background-color: #233c53;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 5px;
+  cursor: pointer;
+}

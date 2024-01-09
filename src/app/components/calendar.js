@@ -27,6 +27,7 @@ const Calendar = () => {
     width: 300,
     border: `1px solid ${token.colorBorderSecondary}`,
     borderRadius: token.borderRadiusLG,
+    backgroundColor: 'black',
   };
 
 //   useEffect(() => {
@@ -42,9 +43,9 @@ const Calendar = () => {
     const listData = events.filter(event => event.date === value.format('YYYY-MM-DD'));
 
     return (
-      <ul className="events">
+      <ul >
         {listData.map(item => (
-          <li key={item.id}>
+          <li className={styles.event} key={item.id}>
             <span>{item.title}</span>
           </li>
         ))}

@@ -5,7 +5,7 @@ import Carousel  from './components/carousel'
 import Calendar from './components/calendar'
 import { InstagramOutlined, FacebookOutlined, YoutubeOutlined, GoogleOutlined } from '@ant-design/icons'
 
-const raleway = Raleway({ subsets: ['latin'] })
+const raleway = Raleway({ subsets: ['latin'], weight: ['200', '300', '400', '500', '700'] })
 const poppins = Poppins({ subsets: ['latin'], weight: ['200', '300', '400', '500'] })
 
 
@@ -52,25 +52,31 @@ export default function Home() {
       </div>
       <div className={styles.container3}>
         <div className={styles.boxContainer}>
-          <div className={styles.box1}>
-            <h4 className={`${styles.boxHeader} ${raleway.className}`}>Full Catering Service</h4>
-            <p className={`${styles.boxDescription} ${poppins.className}`}>
-              We offer full catering services for any event. Whether you're hosting a wedding, birthday party, or corporate event, we can provide the perfect menu for your guests. Our team will work with you to create a customized menu that fits your needs and budget. We also offer delivery and set up so you don't have to worry about anything on the day of the event!
-            </p>
-          </div>
-          <div className={styles.box2}>
+        <div className={styles.box2}>
             <h4 className={`${styles.boxHeader} ${raleway.className}`}>Locations</h4>
             <p className={`${styles.boxDescription} ${poppins.className}`}>
               We have one main location in west chester, but we are always mobile! Check out our calendar to see where we will be next.
             </p>
+            <button className={`${styles.boxButton} ${raleway.className}`}>Calendar</button>
+          </div>
+          <div className={styles.box1}>
+            <h4 className={`${styles.boxHeader} ${raleway.className}`}>Full Catering Service</h4>
+            <p className={`${styles.boxDescription} ${poppins.className}`}>
+              We offer full catering services for any event. Whether you're hosting a wedding, birthday party, or corporate event, we can provide the perfect menu for your guests. Our team will work with you to create a customized menu that fits your needs and budget.
+            </p>
+            <button className={`${styles.boxButton} ${raleway.className}`}>Schedule now</button>
           </div>
         </div>
       </div>
       <div className={styles.calendarContainer}>
-          <h2 className={`${styles.midHeader} ${raleway.className}`}>Calendar</h2>
-          <div className={styles.calendar}>
-            <Calendar />
-          </div>
+        <div className={styles.calRow}>
+          <span className={styles.calDivider1}></span>
+            <h2 className={`${styles.midHeader} ${raleway.className}`}>Find us</h2>
+          <span className={styles.calDivider2}></span>
+        </div>
+        <div className={styles.calendar}>
+          <Calendar />
+        </div>
       </div>
     </main>
   )

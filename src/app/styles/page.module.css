@@ -5,7 +5,7 @@
   align-items: center;
   width: 100vw;
   min-height: 1000px;
-  margin-top: 5rem;
+  margin-top: 3rem;
   background-image: url('/mangiaTruck2.png');
   background-size: contain;
   background-position: top;
@@ -67,6 +67,24 @@
   align-items: center;
   background-color: white;
 }
+.calRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin: 1rem 0;
+}
+.calDivider1 {
+  width: 50%;
+  height: .5rem;
+  background-color: #605148;
+}
+.calDivider2 {
+  width: 100%;
+  height: .5rem;
+  background-color: #605148;
+}
 .image {
   width: 100%;
   height: 100%;
@@ -101,7 +119,10 @@
   color: rgba(96, 81, 72, 1);
   font-size: 4rem;
   font-weight: 700;
-  text-align: center;
+  width: 600px;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  margin-bottom: 1.5rem;
 }
 .mainDescription {
   color: white;
@@ -139,12 +160,12 @@
 }
 .container2 {
   background-color: black;
-  min-height: 1000px;
+  min-height: 900px;
   margin-top: 0rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url('/midImage.png');
+  background-image: url('/mainP.png');
   background-size: contain;
   background-position: right;
   background-repeat: no-repeat;
@@ -171,6 +192,29 @@
   justify-content: center;
   margin-top: 4rem;
 }
+.boxHeader {
+  color: #605148;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 0rem 0;
+}
+.boxDescription {
+  color: white;
+  font-size: 1rem;
+  font-weight: 300;
+  max-width: 650px;
+  line-height: 1.2rem;
+  text-align: left;
+  margin: 1rem 0;
+}
+.buttonRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
 
 
 .boxContainer {
@@ -185,22 +229,40 @@
   background-color: black;
   border-radius: 1.5rem;
   display: flex;
-  padding: 1rem;
+  padding: 1.5rem;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  box-shadow: #2E2E2E 0px 5px 15px;
   margin: 0 2rem;
+  min-height: 250px;
 }
 .box2 {
   width: 400px;
   background-color: black;
   border-radius: 1.5rem;
   display: flex;
-  padding: 1rem;
+  padding: 2rem;
+  padding-right: 3.5rem;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  margin: 0 2rem;
+  box-shadow: #2E2E2E 0px 5px 15px;
+  align-items: flex-start;
+  margin-right: -4rem;
+  margin-top: 7rem;
+  min-height: 250px;
+}
+.boxButton {
+  background-color: transparent;
+  color: #605148;
+  font-size: 1.3rem;
+  border: none;
+  font-weight: 500;
+  padding: 0rem;
+  border-radius: 0rem;
+  cursor: pointer;
+  margin: 1rem;
+  margin-left: 0rem;
 }
 
 .description {

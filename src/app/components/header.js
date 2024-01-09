@@ -41,13 +41,13 @@ return (
     <header className={styles.fixedHeader}>
             <Link className={styles.navItem} href="/">Home</Link>
             <Link className={styles.navItem} href="/about">About</Link>      
-            <Image src="/Mlogo.png" alt="Mangia Mobile Logo" width={200} height={100} />
+            <Image src="/mangiaLogo.png" alt="Mangia Mobile Logo" width={150} height={70} />
             <Link className={styles.navItem} href="/menu">Menu</Link>
             <Link className={styles.navItem} href="/contact">Contact</Link>
     </header>
     {/* version for smaller screens */}
     <div className={styles.dropdownNav}>
-            <Image src="/Mlogo.png" alt="Mangia Mobile Logo" width={200} height={100} />
+            <Image src="/mangiaLogo.jpg" alt="Mangia Mobile Logo" width={200} height={100} />
             <Dropdown
                 menu={{
                 items,
